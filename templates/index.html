@@ -1,0 +1,20 @@
+<div class="container mt-5 pt-5">
+    <div class="row">
+        
+        {% for category in categories %}
+        <div class="col-md-3">
+            <figure class="card card-product-grid">
+                <figcaption class="info-wrap border-top">
+                    <a href="{% url 'products' category_slug=category.slug %}">
+                        <b>{{category.category_name}}</b></a>
+                </figcaption>
+            </figure> <!-- card // -->
+        </div> <!-- col.// -->
+
+        {% endfor %}
+      
+        
+       
+    </div>
+
+    </div>

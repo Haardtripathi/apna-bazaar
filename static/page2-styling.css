@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+#white{
+  color: white;
+}
+
+body {
+  background-color: #050608;
+  overflow-x: hidden;
+}
+.nav-bar {
+  height: 68px;
+  width: 1534px;
+  border-bottom: 1px solid rgba(106, 106, 106, 0.453);
+}
+
+.logo {
+  /* border: 1px solid black; */
+  width: 253px;
+  height: 60px;
+  margin-left: 13px;
+}
+
+.svg-icon {
+  margin-left: 14px;
+  margin-top: 18px;
+}
+
+.logo-text {
+  color: #aa0a60;
+  /* color: transparent; */
+  /* background: linear-gradient(to top, #ff0084, #33001b);
+    background-clip: text; */
+  /* border: 1px solid black; */
+  width: 200px;
+  margin-top: -172px;
+  font-size: 28px;
+  margin-left: 50px;
+  font-weight: bolder;
+}
+
+/* search bar */
+.topnav {
+  overflow: hidden;
+  background-color: #050608;
+  width: 400px;
+  height: 60px;
+  margin-left: 600px;
+  margin-top: -58px;
+  padding-left: 2px;
+}
+
+.topnav input[type="text"] {
+  padding: 7px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 14px;
+  font-size: 17px;
+  height: 30px;
+  width: 370px;
+  border-radius: 20px;
+  border: 1px solid #b0b0b0;
+  background-color: #050608;
+  color: white;
+}
+
+.search {
+  margin-top: -72px;
+  margin-left: 340px;
+  padding-bottom: 27px;
+}
+
+/* profile */
+.profile {
+  height: 60px;
+  width: 60px;
+  margin-left: 1300px;
+  text-align: center;
+  margin-top: -60px;
+  cursor: pointer;
+}
+
+.dp-svg {
+  margin-top: 6px;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+}
+
+.profile-text {
+  color: white;
+  font-size: 14px;
+}
+
+.profile:hover .dp-svg {
+  color: transparent;
+  background: linear-gradient(to top, #ff0084, #33001b);
+}
+
+/* wishlist */
+.wishlist {
+  height: 60px;
+  width: 60px;
+  margin-left: 1380px;
+  text-align: center;
+  margin-top: -60px;
+  cursor: pointer;
+}
+
+.wishlist-svg {
+  margin-top: 6px;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+}
+
+.wishlist-text {
+  color: white;
+  font-size: 14px;
+}
+
+.wishlist:hover .wishlist-svg {
+  color: transparent;
+  background: linear-gradient(to top, #ff0084, #33001b);
+}
+
+/* cart */
+.cart {
+  height: 60px;
+  width: 60px;
+  margin-left: 1460px;
+  text-align: center;
+  margin-top: -60px;
+  cursor: pointer;
+}
+
+.cart-svg {
+  margin-top: 6px;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+}
+
+.cart-text {
+  color: white;
+  font-size: 14px;
+}
+
+.cart:hover .cart-svg {
+  color: transparent;
+  background: linear-gradient(to top, #ff0084, #33001b);
+}
+
+.main-container {
+  display: flex;
+  align-items: cnter;
+  justify-content: center;
+}
+
+.left-container {
+  width: 20%;
+  /* s */
+  height: 860px;
+  margin-top: 60px;
+  margin-left: -1222px;
+}
+
+.right-container {
+  width: 80%;
+  /* border: 1px solid white; */
+  height: 860px;
+  margin-top: 52px;
+  margin-left: 310px;
+}
+
+.filter-text {
+  width: 130px;
+  color: white;
+  /* border: 1px solid white; */
+  margin-left: 24px;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.line {
+  border: 1px solid rgba(80, 80, 80, 0.518);
+  width: 304px;
+  margin-top: 22px;
+}
+
+.cat-box {
+  height: 100px;
+  width: 304px;
+  /* border: 1px solid white; */
+}
+
+.cat-text {
+  color: white;
+  margin-left: 22px;
+  font-size: 17px;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+/* checkbox */
+
+input[type="checkbox"] {
+  margin-right: 20px; /* Adjust spacing between checkbox and text */
+  transform: scale(1.5);
+  background-color: #050608;
+  /* border: 1px solid white; */
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 10px; /* Adjust the space for the custom checkbox */
+  cursor: pointer;
+  width: 200px;
+  /* border: 1px solid white; */
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #00ff1e; /* Change the background color of the custom checkbox when checked */
+}
+
+.checkbox-container-2 [type="checkbox"]:checked + label {
+  background-color: #00ff1e;
+  color: white; /* Change the background color of the custom checkbox when checked */
+}
+
+label {
+  color: white;
+  font-size: 16px;
+  margin-left: 29px;
+  margin-top: 12px;
+}
+
+.brand-box {
+  height: 280px;
+  width: 304px;
+  /* border: 1px solid white; */
+}
+
+.b-text {
+  color: white;
+  margin-left: 22px;
+  font-size: 17px;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.p {
+  padding-top: 12px;
+}
+
+.p-box {
+  height: 200px;
+  width: 304px;
+  /* border: 1px solid white; */
+}
+
+.p-text {
+  color: white;
+  margin-left: 22px;
+  font-size: 17px;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.p-1 {
+  padding-top: 12px;
+}
+
+.fabric-box {
+  width: 304px;
+  height: 200px;
+  /* border: 1px solid white; */
+}
+.f-text {
+  color: white;
+  margin-left: 22px;
+  font-size: 17px;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.p-2 {
+  padding-top: 12px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  gap: 6px; /* Adjust the gap between grid items */
+  width: 1200px;
+  /* border: 1px solid white; */
+  height: 800px;
+}
+
+.grid-item {
+  background-color: #4b4b4b; /* Background color of grid items */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center;
+  height: 304px;
+  width: 200px;
+  margin-left: 22px;
+  margin-top: 30px; /* Center text within grid items */
+}
+
+.image {
+  height: 276px;
+  width: 240px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.item-name {
+  height: 25px;
+  width: 240px;
+  /* border: 1px solid white; */
+  margin-left: -21px;
+  margin-top: -4px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.des {
+  font-size: 13px;
+  color: white;
+  /* border: 1px solid white; */
+  font-weight: 500;
+  width: 240px;
+  height: 18px;
+  margin-left: -21px;
+  text-align: left;
+}
+
+.rs {
+  color: white;
+  height: 18px;
+  width: 240px;
+  /* border: 1px solid white; */
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -21px;
+  text-align: left;
+}
