@@ -116,11 +116,13 @@
       <!-- categories -->
       <div class="category">
         <div class="flex">
-          <div class="c-1">MEN</div>
-          <div class="c-2">WOMEN</div>
-          <div class="c-3">KIDS</div>
-          <div class="c-4">ELECTRONICS</div>
-          <div class="c-5">FURNITURE</div>
+          
+          
+  <a href="{% url 'products' category_slug='men-clothes' %}"><div class="c-1">MEN</div></a>
+  <a href="{% url 'products' category_slug='women-clothes' %}"><div class="c-2">WOMEN</div></a>
+    <a href="{% url 'products' category_slug='kids' %}"><div class="c-3">KIDS</div></a>
+      <a href="{% url 'products' category_slug='electronics' %}"><div class="c-4">ELECTRONICS</div></a>
+        <a href="{% url 'products' category_slug='furniture' %}"><div class="c-5">FURNITURE</div></a>
         </div>
       </div>
 
@@ -190,7 +192,7 @@
   {% for i in categories%}
   <a href="{% url 'products' category_slug=i.slug %}">
   <div class="part">
-    <img src="static/pictures/men.jpg" class="all">
+    <img src="static/pictures/{{i.id}}.jpg" class="all">
     
     <div class="new">{{i}}</div>
   </div>
@@ -214,7 +216,9 @@
   </div> {% endcomment %}
 
 </div>
-<footer class="foot">Designed and Developed in house</footer>
-  <script src="static/app-js.js"></script >
+<footer class="foot">
+  <div class="fu">Designed and Developed in house ♡</div>
+</footer>
+  <script src="static/app-js.js"></script>
   </body>
 </html>

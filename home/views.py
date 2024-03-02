@@ -73,7 +73,7 @@ def products(request,category_slug,):
         for product in all_products:
             data.append({
                 'id':product.id,
-                    'product_name':product.product_name,
+                    'product_name':product.product_name[0:28],
                     'slug':product.slug,
                         'price':product.price,
                         'ratings':product.ratings,

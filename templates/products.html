@@ -45,7 +45,7 @@
             <p id='white'>{{category}}</p>
           <div class="filter-text">FILTERS</div>
           
-          <div class="line"><p id='white'><button type="submit">Apply filters</button></p></div>
+          <div class="line"><p id='white'><button type="submit" class="af">Apply filters</button></p></div>
           <div class="cat-box">
             <div class="cat-text" id="category">CATEGORIES</div>
             
@@ -53,7 +53,7 @@
 
             <div class="checkbox-container">
                 <input type="checkbox" id="checkbox" name="category" value="{{x}}"/>
-                <label for="checkbox">{{x}}</label> <!-- Assuming 'name' is the field for the product type name -->
+                <label for="checkbox">{{x|slice:":28"}}</label> <!-- Assuming 'name' is the field for the product type name -->
                 
 
             </div>
